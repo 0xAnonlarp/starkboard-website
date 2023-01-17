@@ -147,8 +147,6 @@ a:hover{
 }
 
 
-
-
 /* Hero section */
 
 .container{
@@ -157,11 +155,18 @@ a:hover{
   gap: 50px;
   justify-content: space-around;
   flex-wrap: wrap;
+  transition: transform 0.3s ease-in-out;
 }
 
-.dashboard-img{
+.dashboard-img {
   width: 40vw;
+  transition: transform 0.3s ease-in-out;
 }
+
+.dashboard-img:hover {
+  transform: scale(1.05);
+}
+
 
 
 section {
@@ -192,6 +197,7 @@ button{
   color: white;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 button:hover{
@@ -204,6 +210,7 @@ button:hover{
   color: rgb(0, 0, 0);
   cursor: pointer;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 /* Partners section */
@@ -270,3 +277,78 @@ h3{
   margin-bottom: 10px;
 }
 
+/* Section about us */
+
+.section-about-us{
+  background-image: url('/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px 60px 95px;
+}
+
+.p-about-us{
+  color: black;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 600px;
+}
+
+.underline{
+  width: 88px;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+}
+.btn{
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1);
+}
+.btn:hover{
+  transform: scale(1.01);
+}
+
+.h2-section-about-us{
+  font-size: 30px;
+}
+
+a.link{
+  color: black;
+  background: none;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+.link:hover{
+  color: black;
+}
+
+/* Section about us */
+
+.services{
+  padding: 60px 95px 60px 95px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  }
+
+.p-our-services{
+    width: 600px;
+  }
+
+.h2-section-services{
+  color: white;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.chart-img{
+  width: 40vw;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  

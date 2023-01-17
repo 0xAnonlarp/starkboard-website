@@ -3,28 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Starkboard | Starknet dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous">
-   </script>
+    <link rel="shortcut icon" href="/icones/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Hamburger button menu script -->
 
-    <script>
-    $(function() {
-    $(".toggle").on("click", function() {
-        if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
-        } else {
-            $(".item").addClass("active");
-        }
-    });
-});
-    </script>
 
 </head>
 
@@ -35,9 +20,9 @@
     <nav>
         <ul class="menu">
             <li class="logo"><img src="/images/logo.svg"></li>
-            <li class="item b a"><a href="#">Features</a></li>
-            <li class="item b"><a href="#">Services</a></li>
-            <li class="item b"><a href="#">About us</a></li>
+            <li class="item b"><a href="#features">Features</a></li>
+            <li class="item b"><a href="#services">Services</a></li>
+            <li class="item b"><a href="#about-us">About us</a></li>
             <li class="item b"><a href="#">OG cards</a></li>
             </li>
             <li class="item button"><a href="https://app.starkboard.io/" target="_blank">Enter app</a></li>
@@ -67,7 +52,6 @@
 
  <!-- Partners section -->
 
-
     <section class="partners-section">
 
         <div class="h2-features">
@@ -79,9 +63,7 @@
                  <div class="partners"><img src="/images/matchbox.svg" alt=""></div>
                  <div class="partners"><img src="/images/onlydust.svg" alt=""></div>
                  <div class="partners"><img src="/images/mintsquare.svg" alt=""></div>
-
-
-
+    
             </div>
 
         
@@ -91,7 +73,7 @@
 
     <section class="section-features">
 
-        <div class="h2-features">
+        <div class="h2-features" id="features">
             <h2>Our features</h2>
         </div>
 
@@ -112,7 +94,7 @@
                         <h3 class="h3">Fees</h3>         
                     </div>
                     <div>
-                        <p>Track fees consumed by StarkNet network </p>
+                        <p>Explore a wide range of fee-related metrics, including the top performers, P/F ratio, and distribution across layers 2. </p>
                     </div>
                 </div>
 
@@ -154,18 +136,74 @@
                                         <h3 class="h3">Transactions</h3>         
                                     </div>
                                     <div>
-                                        <p>Track StarkNet transactions metrics.</p>
+                                        <p>Monitor all StarkNet transaction metrics, including deployed contracts, transaction distribution and more.</p>
                                     </div>
                                 </div>
 
+     </section>
+
+     <!-- Section about us -->
+
+     <section class="section-about-us" id="about-us">
+        <h2 class="h2-section-about-us">About us</h2>
+        <p class="p-about-us">Founded in June 2022, Starkboard is the best place to track StarkNet-related metrics and keep up with new protocols adding to the constellation! <br><br>
+                                At StarkBoard, we care about user experience. That’s why we’re taking into consideration every feedback received and still keep pushing for innovations and added-value.</p>
+            
+            <div class="btn">
+                <a class= "link" href="https://app.starkboard.io/" target="_blank">Learn more</a>
+                <div class="underline"></div>
+            </div>
+                               
+
+     </section>
+
+      <!-- Our services -->
+
+      <section class="services" id="services">
+        <div class="content">
+            <h2 class="h2-section-services">Our services</h2>
+            <p class="p-our-services">We’re providing DAO2DAO services for entities (high quality data analysis, deep insights, historical insights, social analysis, on-chain users profiling & dashboard creation).</p>
+            <a class="button" href="https://app.starkboard.io/" target="_blank"><button>Learn more</button></a>
+        </div>
+         <div class="chart">
+          <img class="chart-img" src="/images/dashboard2.svg" alt="">
+         </div>
+      </section>
         
-    
-
-
-    </section>
 
 </main>
    
 </body>
+
+<script>
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+          e.preventDefault();
+    
+          var target = this.hash;
+          var $target = $(target);
+    
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 900, 'swing', function () {
+              window.location.hash = target;
+          });
+      });
+    });
+    </script>
+
+    <!-- Hamburger button menu script -->
+
+    <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+    </script>
 
 </html>
