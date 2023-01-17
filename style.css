@@ -254,8 +254,8 @@ button:hover{
 .block{
   background: linear-gradient(180deg, #343857 0%, #1B1F38 100%);
   border-radius: 10px;
-  padding: 30px;
-  width: 500px;
+  padding: 30px 60px 30px 60px;
+  width: 600px;
 }
 
 h3{
@@ -274,13 +274,13 @@ h3{
   display: flex;
   justify-content: flex-start;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Section about us */
 
 .section-about-us{
-  background-image: url('images/background.png');
+  background-image: url("images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0px 60px 95px;
@@ -290,7 +290,7 @@ h3{
   color: black;
   margin-top: 20px;
   padding-bottom: 20px;
-  width: 600px;
+  width: 500px;
 }
 
 .underline{
@@ -321,7 +321,7 @@ a.link{
   color: black;
 }
 
-/* Section about us */
+/* Section services */
 
 .services{
   padding: 60px 95px 60px 95px;
@@ -351,4 +351,44 @@ a.link{
   justify-content: center;
 }
 
+/* Section OG cards */
+
+.og-cards{
+  background-image: url("images/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 360px 170px 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-og-cards{
+  background: linear-gradient(180deg, #2B3559 0%, #000000 100%, #0B080F 100%);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 70px;
+  gap: 50px;
+ 
   
+}
+  
+.h2-og-cards {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.mp4 {
+  width: 40vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+}
+
+.content-services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 420px;
+}
