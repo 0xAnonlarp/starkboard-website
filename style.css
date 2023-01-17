@@ -283,7 +283,8 @@ h3{
   background-image: url("images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 0px 60px 95px;
+  padding: 60px 150px 60px 150px;
+
 }
 
 .p-about-us{
@@ -324,7 +325,8 @@ a.link{
 /* Section services */
 
 .services{
-  padding: 60px 95px 60px 95px;
+  
+  padding: 60px 150px 60px 150px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
