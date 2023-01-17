@@ -394,3 +394,67 @@ a.link{
   justify-content: center;
   width: 420px;
 }
+
+/* footer */
+
+footer{
+  background: linear-gradient(180deg, #2B3559 0%, #000000 100%, #0B080F 100%);
+  padding: 90px;
+  
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.underline-row2{
+  width: 7.2rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  margin-top: 3px;
+}
+
+.underline-row3{
+  width: 5.9rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  margin-top: 3px;
+}
+
+.underline-row4{
+  width: 7.5rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  margin-top: 3px;
+}
+
+.icone{
+  padding: 13px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+}
+
+.social-icones{
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+img.twitter{
+  width: 23px;
+  padding-top: 4px;
+}
+
+img.discord{
+  width: 23px;
+}
+
+
+
+img.medium{
+  padding-top: 3.5px;
+}
+
