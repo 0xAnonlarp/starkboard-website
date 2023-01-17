@@ -7,6 +7,7 @@
 }
 body {
   font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
 }
 
 /* Navbar and Topnavbar */
@@ -18,10 +19,15 @@ body {
   color: white;
 }
 
+
 nav {
   background: linear-gradient(180deg, #2A3357 0%, #191C35 100%);
   padding: 0.5rem 6rem;
 }
+
+
+
+
 ul {
   list-style-type: none;
 }
@@ -68,15 +74,16 @@ a:hover{
   color: white;
 }
 
-.menu li {
+.menu li:not(.logo) {
   font-size: 16px;
-  padding: 15px 0px;
+  padding: 15px 5px;
   margin-left:20px;
   white-space: nowrap;
 }
 
-
-
+.menu li.logo{
+  padding: 0px;
+}
 
 /* Mobile menu */
 
@@ -140,124 +147,126 @@ a:hover{
 }
 
 
+
+
 /* Hero section */
 
-section{
-  
-  height: 650px;
-  left: 0px;
-  top: 0px;
+.container{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dashboard-img{
+  width: 40vw;
+}
+
+
+section {
+  padding:95px;
   background: linear-gradient(180deg, #2B3559 0%, #000000 100%, #0B080F 100%);
-
 }
 
-
-
-
-
-
-
-
-/* Tablet menu */
-
-@media all and (min-width: 670px) {
-  .menu {
-      justify-content: center;
-  }
-
-  .logo {
-      flex: 1;
-  }
-
-  .item.button {
-      width: auto;
-      order: 1;
-      display: block;
-  }
-  .toggle {
-      order: 2;
-  }
-  .button.secondary {
-      border: 0;
-  }
-
-
-  li .logo{
-    margin: 0px;
-  }
-
+.text{
+  max-width: 30rem;
 }
 
-@media all and (max-width:1170px){
-
-
-.menu li.item.b{
-  border-top: 0.5px solid #423E52;
-  margin: 0;
-  padding: 20px;
-}
-
-li.item.b.a.active{
-  margin-top: 8px;
-}
-
-
-li.logo{
-  margin-left: 0px;
-}
-
-menu.li{
-  padding: 0px;
-}
-
-}
-
-@media all and (max-width:680px){
-  .menu li.button {
-    display: none;
-}
-
-
-}
-
-  
- 
- 
-
-
-/* Desktop menu */
-
-@media all and (min-width: 1180px) {
-  .item {
-      display: block;
-      width: auto;
-  }
-  .toggle {
-      display: none;
-  }
-
-  .logo {
-      order: 0;
-  }
-  .item {
-      order: 1;
-  }
-  .button {
-      order: 2;
-  }
-  .menu li {
-      padding: 15px 10px;
-  }
-  .menu li.button {
-      padding-right: 0;
-  }
-
-}
-
-@media all and (max-width: 1000px){
-  nav{
-    padding: 0.5rem 1rem;
-  }
-
+.h1 , p{
+  color: white;
+  padding-bottom: 15px;
 }
   
+.h1{
+  font-size: 3rem;
+}
+
+button{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 15px 35px;
+  background: linear-gradient(270.02deg, #8C8ED7 0.02%, #6A70FA 98.32%);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 15px 35px;
+  background: white;
+  border-radius: 8px;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Partners section */
+
+.partners-section{
+  background: white;
+  padding: 60px;
+}
+
+.logos{
+  display:flex;
+  background: white;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.h2-partners{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 30px;
+}
+
+/* Features section */
+
+.section-features{
+  padding: 60px;
+}
+
+.block-group{
+  display:flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.block-group p{
+  padding-bottom: 0px;
+}
+
+.block{
+  background: linear-gradient(180deg, #343857 0%, #1B1F38 100%);
+  border-radius: 10px;
+  padding: 30px;
+  width: 500px;
+}
+
+h3{
+  color: white;
+}
+
+.h2-features{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  font-size: 20px;
+  color: white;
+}
+
+.icon-title{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
