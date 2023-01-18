@@ -16,7 +16,23 @@ body {
   text-align: center;
   padding: 10px;
   background: linear-gradient(270.02deg, #8C8ED7 0.02%, #6A70FA 98.32%);
+  background-size: 400% 400%;
   color: white;
+  animation: anim 2.5s infinite ease-in-out;
+}
+
+@keyframes anim {
+  0%{
+    background-position: 0 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100%{
+    background-position: 0 50%;
+  }
 }
 
 
@@ -219,6 +235,8 @@ button:hover{
   background: white;
   padding: 60px;
 }
+
+
 
 .logos{
   display:flex;

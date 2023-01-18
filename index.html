@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="icones/favicon.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <!-- Navigation bar / menu -->
@@ -43,7 +41,9 @@
                 <a class=button href="https://app.starkboard.io/" target="_blank"><button>Dashboard</button></a>
             </div>
             <div class="dashboard">
-                <img class="dashboard-img" src="images/dashboard.svg" alt="">
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <img class="dashboard-img" src="images/dashboard.svg" alt="">
+                </div> 
             </div>
         </div>
 
@@ -59,12 +59,15 @@
             </div>
 
             <div class="logos">
+               
                 <div class="partners"><img src="images/starkware.svg" alt=""></div>
                  <div class="partners"><img src="images/matchbox.svg" alt=""></div>
                  <div class="partners"><img src="images/onlydust.svg" alt=""></div>
                  <div class="partners"><img src="images/mintsquare.svg" alt=""></div>
-    
             </div>
+
+                
+    
 
         
     </section>
@@ -163,10 +166,12 @@
         <div class="content">
             <h2 class="h2-section-services">Our services</h2>
             <p class="p-our-services">We’re providing DAO2DAO services for entities (high quality data analysis, deep insights, historical insights, social analysis, on-chain users profiling & dashboard creation).</p>
-            <a class="button" href="https://app.starkboard.io/" target="_blank"><button>Learn more</button></a>
+            <a class="button" href="https://calendly.com/starkboard/30min?month=2023-01" target="_blank"><button>Book a call with us</button></a>
         </div>
          <div class="chart">
-          <img class="chart-img" src="images/dashboard2.svg" alt="">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <img class="chart-img" src="images/dashboard2.svg" alt="">
+            </div>
          </div>
       </section>
 
@@ -231,6 +236,11 @@
     </div>
 
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
    
 </body>
 
