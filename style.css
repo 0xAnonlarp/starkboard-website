@@ -15,7 +15,7 @@ body {
 .top-nav p{
   text-align: center;
   padding: 10px;
-  background: linear-gradient(270.02deg, #8C8ED7 0.02%, #6A70FA 98.32%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
   background-size: 400% 400%;
   color: white;
   animation: anim 2.5s infinite ease-in-out;
@@ -62,7 +62,7 @@ a:hover{
 
 .button a {
   padding: 10px 25px;
-  background: linear-gradient(270.02deg, #8C8ED7 0.02%, #6A70FA 98.32%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
   border-radius: 8px;
   color: white;
   font-weight: bold;
@@ -207,7 +207,7 @@ button{
   margin-top: 20px;
   font-size: 16px;
   padding: 15px 35px;
-  background: linear-gradient(270.02deg, #8C8ED7 0.02%, #6A70FA 98.32%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
   border-radius: 8px;
   border: none;
   color: white;
@@ -231,12 +231,14 @@ button:hover{
 
 /* Partners section */
 
+.resp{
+  display: none;
+}
+
 .partners-section{
   background: white;
   padding: 60px;
 }
-
-
 
 .logos{
   display:flex;
@@ -315,8 +317,9 @@ h3{
 .underline{
   width: 88px;
   height: 0.25rem;
-  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
 }
+
 .btn{
   transition: transform 0.2s ease-in-out;
   transform: scale(1);
@@ -431,28 +434,30 @@ footer{
 .underline-row2{
   width: 7.2rem;
   height: 0.25rem;
-  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
   margin-top: 3px;
 }
 
 .underline-row3{
   width: 5.9rem;
   height: 0.25rem;
-  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
+
   margin-top: 3px;
 }
 
 .underline-row4{
   width: 7.5rem;
   height: 0.25rem;
-  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
   margin-top: 3px;
 }
 
 .icone{
   padding: 13px;
   border-radius: 5px;
-  background: linear-gradient(90deg, #7273BE 0.57%, #6166D7 100.57%);
+  background: linear-gradient(90deg, #6A3DF3 0%, #8960ED 100%);
+
 }
 
 .social-icones{

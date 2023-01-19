@@ -104,4 +104,143 @@ menu.li{
   }
 
 }
+
+/* hero section */
+
+@media all and (max-width: 1200px){
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .dashboard-img{
+    display: flex;
+    align-items: center;
+    width: 70vw ;
+  }
+
+  .h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text{
+    max-width: 35rem;
+    text-align: center;
+  }
+  
+  .h1 , p{
+    color: white;
+    padding-bottom: 15px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  button{
+    padding: 15px 100px 15px 100px;
+  }
+
+}
+
+@media all and (max-width: 620px){
+
+
+  section{
+    margin:0px;
+    padding: 50px 10px 50px 10px;
+  }
+  .h1{
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text{
+    max-width: 25rem;
+    text-align: center;
+  }
+
+  .dashboard-img{
+    display: flex;
+    align-items: center;
+    width: 90vw ;
+  }
+}
+
+/* Partners section */
+
+@media all and (max-width: 420px){
+
+  .partners-section{
+    background: white;
+    padding: 60px 0px 60px 0px;
+  }
+  
+  .logos{
+    display:flex;
+    background: white;
+    justify-content: center;
+  }
+  
+  .h2-partners{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+  }
+
+  .partners{
+    display: none;
+  }
+
+  .resp{
+    display: flex;
+    
+  }
+
+}
+
+/* Section about us */
+
+@media  all and (max-width: 800px){
+  .section-about-us{
+    background-image: none;
+    background: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px
+  }  
+
+  .p-about-us{
+    display: inline-block;
+    max-width: none;
+    text-align: center;
+    justify-content: center;
+  }
+
+  a.link{
+    color: black;
+    display: flex;
+    justify-content: center;
+    background: none;
+    padding-top: 25px;
+    font-weight: bold;
+  }
+
+
+
+
+}
+  
+
+
+  
+
+
   
